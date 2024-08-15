@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission | Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="./assets/videos/admissionbg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-overlay"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <p>School Logo</p>
+        </div>
+        <div class="navbar-toggle" id="navbar-toggle">&#9776;</div>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./admission.html">Admission</a></li>
+            <li><a href="./about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="heading">
+        <p>Fill the form for Admission</p>
+    </div>
+
+
+    <div class="admission-container">
+        <form method="post" class="admission-form" id="admission-form">
+            <ul class="form-metarial" id="form-metarial">
+                <li><label for="fullname">Full Name</label></li>
+                <li><input type="text" name="fullname" id="_ful-name" class="form-metarial-input" placeholder="Full Name" required></li>
+                <li><label for="fname">Father Name</label></li>
+                <li><input type="text" name="fname" id="_father-name" class="form-metarial-input" placeholder="Father Name" required></li>                
+                <li><label for="fphone">Mobile Number</label></li>
+                <li><input type="text" name="fphone" id="_phone" class="form-metarial-input" placeholder="Phone Number" required></li>
+                <li><label for="email">Email</label></li>
+                <li><input type="email" name="email" id="_email" class="form-metarial-input" placeholder="Enter Email" required></li>
+                <li><label for="dob">Date Of Birth</label></li>
+                <li><input type="datetime" name="dob" id="_dob" class="form-metarial-input" placeholder="Select Your DOB" required></li>
+                <li><label for="gender">Select Gender</label></li>
+                <li><input type="radio" name="gender" id="_gender" class="g-input">Male</li>
+                <li><input type="radio" name="gender" id="_gender" class="g-input">Female</li>
+                <li><input type="radio" name="gender" id="_gender" class="g-input">Custom</li>
+                <li><label for="password">Enter Password</label></li>
+                <li><input type="password" name="password" id="_password" class="form-metarial-input" placeholder="Enter Password" required></li>
+                <li><label for="rpassword">Repeat Password</label></li>
+                <li><input type="password" name="rpassword" id="_rpassword" class="form-metarial-input" placeholder="Repeat Password" required></li>
+            </ul>
+        </form>
+        <div class="btn">
+            <button type="submit" class="sub-btn" id="sub-btn">Submit Application</button>
+        </div>
+    </div>
+
+    <div class="footer-content">
+        <footer>
+            <p>&copy; Tayyab Fayyaz or T-F Agency. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
